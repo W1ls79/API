@@ -23,7 +23,7 @@ const ShowProducts = () => {
 
     const getProducts = async () => {
         try {
-            const response = await axios.get(url);
+            const response = await axios.get(url+"GET");
             setProducts(response.data);
         } catch (error) {
             console.error('Error al obtener los productos:', error);
