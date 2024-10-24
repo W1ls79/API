@@ -24,9 +24,9 @@ const ShowProducts = () => {
     const getProducts = async () => {
         try {
             const response = await axios.get(url);
-            //const data = JSON.parse(response.data.body);
-            //setProducts(Array.isArray(data) ? data : []);
-            setProducts(response.data);
+            const data = JSON.parse(response.data.body);
+            setProducts(Array.isArray(data) ? data : []);
+            //setProducts(response.data);
         } catch (error) {
             console.error('Error al obtener los productos:', error);
         }
