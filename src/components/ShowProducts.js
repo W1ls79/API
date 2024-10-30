@@ -88,7 +88,7 @@ const ShowProducts = () => {
             cancelButtonText: 'Cancelar'
         }).then((result) => {
             if (result.isConfirmed) {
-                enviarSolicitud('DELETE', id,{});
+                enviarSolicitud('DELETE',{},id);
             } else {
                 show_alerta('El producto NO fue eliminado', 'info');
             }
