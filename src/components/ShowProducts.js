@@ -114,7 +114,7 @@ const ShowProducts = () => {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Volviendo apreder BBVA adelante
+                        Volviendo apreder BBVA adelante.
                     </Typography>
                     <Button variant="contained" color="secondary" onClick={() => openModal(1)}>
                         Añadir Producto
